@@ -1,0 +1,197 @@
+int main()
+{
+    float a,b,c,d,e,f,W,Wx,Wy,x,y;
+    printf("Uklad rownan: {ax+by=c}, {dx+ey=f}. Podaj kolejno: a, b, c, d, e, f. ");
+    scanf("%f%f%f%f%f%f", &a,&b,&c,&d,&e,&f);
+    printf("Obliczamy W - wyznacznik {ae-bd}, czyli ");
+    W = (a*e)-(b*d);
+    printf("%f",W);
+    printf(", teraz dla x i y");
+    Wx = c*e-b*f;
+    Wy = a*f-c*d;
+    if(W==0)
+    {
+        if(Wx==0&&Wy==0)
+        {
+            printf("sprzeczny, brak rozwiazan");
+        }
+        else
+        printf("nieoznaczony");
+    }
+    else
+    {
+        x=(Wx)/W;
+        y=(Wy)/W;
+        printf("x= %f, y= %f",x,y);
+    }
+
+
+}
+
+ukald rownan(dziala)
+
+int main()
+{
+    float a,b,c,x1,x2,x,delta;
+    printf("podaj a,b,c");
+    scanf("%f%f%f",&a,&b,&c);
+    printf("zdefiniowales rownanie a*x^2+b*x+c=0 | ");
+    delta=b*b-4*a*c;
+    if(delta == 0)
+    {
+        x=(-b)/(2*a);
+        printf("x= %f",&x);
+    }
+    else if(delta<0)
+    {
+        printf("brak rozwiazan, delta ujemna");
+    }
+    else if(delta>0)
+    {
+        x1=(-b-sqrt(delta))/(2*a);
+        x2=(-b+sqrt(delta))/(2*a);
+        printf("delta= %f, x1= %f, x2=%f",&delta,&x1,&x2);
+    }
+}
+
+rownanie kwadratowe()nwm czemu nie dzia;a
+
+
+
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+    int i;
+    for(i=n;i < m; i=i*n);
+    {
+        printf("%d", i);
+    }
+    return 0;
+}
+
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+    int i;
+    for(i=1;i < m+1; i++);
+    {
+        printf("%d", i*n);
+    }
+    return 0;
+}
+
+int main()
+{
+    int n,m,k;
+    scanf("%d%d%d",&n,&m,&k);
+    int i;
+    for(i=1;i<k; i=i*n);
+    {
+        if(i>m)
+            {
+                printf("%d", i);
+            }
+    }
+    return 0;
+}
+# wszystkie wielokrotnosci m i wieksze od k
+# wieksze od 100 i mniejsze niz 120
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i;
+    int w=1;
+    for(i=2;i<=n; i++);
+    {
+        w = w*i;
+    }
+    printf("dla podanej liczby: %d! daje %d ",n,w);
+    return 0;
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i;
+    int w=0;
+    for(i=1;i<=n; i++);
+    {
+        w = w+i*i;
+    }
+    printf("1^2+2^2+...+%d^2=%d ",n,w);
+    return 0;
+}
+
+sil;nia
+
+
+int main()
+{
+    int n,k;
+    scanf("%d",&k);
+    int i;
+    int w=0;
+    while(w<k)
+    {
+        w=w+i*i;
+        i++;
+    }
+    printf("%d",i-2);
+    return 0;
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i;
+    int w=1;
+    for(i=2;i<=n;i=i+2)
+    {
+        w=w*i;
+    }
+    printf("%d",w);
+    return 0;
+}
+
+
+
+int main()
+{
+    int n,wynik,i,p,d,temp;
+    scanf("%d",&n)
+    wynik = 0;
+    p=1;
+    d=1;
+    for(i=1;i<n;i++)
+    {
+        temp=p;
+        p=d;
+        d=d+temp;
+    }
+    printf("%d=%d",n,p)
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
