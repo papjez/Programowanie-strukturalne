@@ -1,0 +1,81 @@
+/* DAJE LICZBY DOSKONALE
+LICZBA KTORA JEST ROWAN SUMIE LICZBY DZILENIKOW PRAWDZIWYCH
+1,2,3 dodane daja 6 a 1,2,3 to dzielniki liczby 6 */
+
+int main()
+{
+    int x,d,s;
+    for(x=1;x<20000000000;x++)
+    {
+        s=0;
+        for(d=1;d<x;d++)
+        {
+            if(x%d==0)
+            {
+                s=s+d;
+            }
+        }
+        if(x==s)
+        {
+            printf("%d ",x);
+        }
+    }
+}
+
+int wartosc_bezwzgledna(int x)
+{
+    if(x<0)
+    {
+        return -x;
+    }
+    else
+    {
+        return x;
+    }
+}
+
+int main()
+{
+   int n;
+   scanf("%d",&n);
+   printf("|%d|=%d",n,wartosc_bezwzgledna(n))
+}
+
+
+unsigned int silnia(unsigned int x)
+{
+    unsigned int wynik=1;
+    int i;
+    for(i=2;i<=x;i++)
+    {
+        wynik=wynik*i;
+    }
+    return wynik;
+}
+
+int main()
+{
+   unsigned int n;
+   scanf("%d",&n);
+   printf("%d!=%d",n,silnia(n));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
