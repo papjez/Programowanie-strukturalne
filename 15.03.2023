@@ -1,0 +1,43 @@
+void zlicz()
+{
+    static int liczba =0;
+    liczba++;
+    printf("wynkcje wywolano %d razy", liczba);
+}
+
+
+
+int main()
+{
+    zlicz();
+    zlicz();
+    zlicz();
+    zlicz();
+    zlicz();
+    return 0;
+}
+
+void zlicz()
+{
+    static int suma =0;
+    suma=suma+x;
+    printf("wynkcje wywolano %d razy\n", suma);
+    return x;
+}
+
+int silnia(int n)
+{
+   if(n==0)
+   {
+       return 1;
+   }
+   return n*silnia(n-1);
+}
+
+
+
+int main()
+{
+    printf("%d",silnia(5));
+    return 0;
+}
