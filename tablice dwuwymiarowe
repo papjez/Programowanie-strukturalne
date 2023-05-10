@@ -1,0 +1,24 @@
+void zeruj3(int** t,unsigned int n, unsigned int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            t[i][j]=0;
+        }
+    }
+}
+int suma(int** t,unsigned int n, unsigned int n)
+{
+    int i,j;
+    int suma;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            suma=suma+t[i][j];
+        }
+    }
+    return suma;
+}
